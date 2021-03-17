@@ -5,7 +5,7 @@ def fib(n):
     return fib(n-1)+fib(n-2)
   
 
-int n=int(input("Enter the limitation for fibonacci series: "))
+r=int(input("Enter the limitation for fibonacci series: "))
 print("\n")
-for i in range(1,n+1):
+for i in range(1,r+1):
   print(fib(i),end=' ')
