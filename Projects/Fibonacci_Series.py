@@ -5,7 +5,14 @@ def fib(n):
     return fib(n-1)+fib(n-2)
   
 
-r=int(input("Enter the limitation for fibonacci series: "))
+while true:
+  try:
+    r=input("Enter the position of the fibonacci sequence")
+    r=int(r)
+    break
+   except ValueError:
+    print("Invalid Input please enter an integer value!!")
+
 print("\n")
 for i in range(1,r+1):
   print(fib(i),end=' ')
